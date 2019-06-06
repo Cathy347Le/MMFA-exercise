@@ -18,3 +18,4 @@ for (let i = 1; i <= commentCount; i++) {
 - Create connection.js to save comment data to mongoDB
 - Check comments collections exist in mongoDB
 - Check port 3000 to see json data displayed on browser
+- Reached MVP
