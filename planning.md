@@ -1,3 +1,6 @@
 - Double check you have node
 - install npm `npm init -y`
 - install dependencies - express, mongoose, axios
+- require express and setup port 3000
+- test get request with Hello World
+- capture data from https://jsonplaceholder.typicode.com/comments and save it to a JSON file
