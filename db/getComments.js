@@ -1,4 +1,4 @@
-//  Logic derived from tv-browser lab and fitted to function on a new api
+//  Logic derived from General Assembly tv-browser lab to retrieve a comment data from API
 
 const axios = require("axios");
 const fs = require("fs");
@@ -8,16 +8,14 @@ let commentCount = 30;
 
 let ids = [];
 
-//  Manually adjusted the pokeCount and i values to manually batch the first 153 pokemon.
-//  TODO  Make a recursive loop to automate batching.
+//What happens when I can't pull all the data into one JSON file? How to automate batching?
 
-// Capture the first 10 comments
+// Capture all 500 comments
 for (let i = 1; i <= commentCount; i++) {
   ids.push(i);
 }
 
-// build 20 urls to make calls to, and return array of promises with those urls
-// @ts-ignore
+// build 500 urls to make calls to, and return array of promises with those urls
 let calls = ids.map(id => `${baseURL}${id}`).map(url => axios.get(url));
 
 // execute all promises, writing to disk if successful

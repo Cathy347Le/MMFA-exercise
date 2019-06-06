@@ -3,7 +3,7 @@
 - install dependencies - express, mongoose, axios
 - require express and setup port 3000
 - test get request with Hello World
-- capture data from https://jsonplaceholder.typicode.com/comments and save it to a JSON file
+- capture data from https://jsonplaceholder.typicode.com/comments and save it to a JSON file. Try to capture the first 10 comments
 - Updated the loop from i = 0 to i = 1 to get it to work
 
 ```
@@ -19,3 +19,4 @@ for (let i = 1; i <= commentCount; i++) {
 - Check comments collections exist in mongoDB
 - Check port 3000 to see json data displayed on browser
 - Reached MVP
+- Capture all 500 comments
