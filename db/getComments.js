@@ -4,7 +4,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 let baseURL = `https://jsonplaceholder.typicode.com/comments/`;
-let commentCount = 30;
+let commentCount = 500;
 
 let ids = [];
 
