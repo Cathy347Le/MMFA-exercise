@@ -6,10 +6,15 @@
 - capture data from https://jsonplaceholder.typicode.com/comments and save it to a JSON file
 - Updated the loop from i = 0 to i = 1 to get it to work
 
-```for (let i = 1; i <= commentCount; i++) {
+```
+for (let i = 1; i <= commentCount; i++) {
   ids.push(i);
 }
 ```
 
 - build comments model
-- create route and controller to display comment data on port 3000
+- create comment controller in index.js
+- create seed file to load in comments from comment.json file
+- Create connection.js to save comment data to mongoDB
+- Check comments collections exist in mongoDB
+- Check port 3000 to see json data displayed on browser

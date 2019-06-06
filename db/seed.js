@@ -1,6 +1,6 @@
 const Comment = require("../models/comment");
 
-const commentData = require("./comment10.json");
+const commentData = require("./comments.json");
 
 Comment.deleteMany({}).then(() => {
   Comment.create(commentData)

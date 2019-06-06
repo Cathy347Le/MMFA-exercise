@@ -4,7 +4,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 let baseURL = `https://jsonplaceholder.typicode.com/comments/`;
-let commentCount = 15;
+let commentCount = 30;
 
 let ids = [];
 
@@ -26,14 +26,14 @@ Promise.all(calls)
     let collectedData = success.map(res => res.data);
     // console.log(collectedData);
     let stringified = JSON.stringify(collectedData);
-    fs.writeFile(__dirname + "/comment10.json", stringified, "utf8", err => {
+    fs.writeFile(__dirname + "/comments.json", stringified, "utf8", err => {
       if (err) {
         console.error(err);
       } else {
         console.log(
           `successfully wrote ${
             collectedData.length
-          } records to db/comment10.json`
+          } records to db/comments.json`
         );
       }
     });
