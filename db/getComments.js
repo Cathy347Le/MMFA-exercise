@@ -12,7 +12,7 @@ let ids = [];
 //  TODO  Make a recursive loop to automate batching.
 
 // Capture the first 10 comments
-for (let i = 0; i < commentCount; i++) {
+for (let i = 1; i <= commentCount; i++) {
   ids.push(i);
 }
 
