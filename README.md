@@ -1,4 +1,6 @@
-- Double check you have node
+## Planning steps
+
+- Double check I have node
 - install npm `npm init -y`
 - install dependencies - express, mongoose, axios
 - require express and setup port 3000
@@ -20,3 +22,8 @@ for (let i = 1; i <= commentCount; i++) {
 - Check port 3000 to see json data displayed on browser
 - Reached MVP
 - Capture all 500 comments
+
+#### Resources used
+
+1. GA Express Json Lab: https://git.generalassemb.ly/dc-wdi-node-express/tv-browser-json-api
+2. My MEHN project ThinkMovie: https://github.com/Cathy347Le/Think-Movie
