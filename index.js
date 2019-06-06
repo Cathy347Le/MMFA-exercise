@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 const Comment = require("./models/comment");
 
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.redirect("/api");
 });
 
-app.get("/api", function(req, res) {
-  Comment.find({}).then(function(comments) {
-    res.json(comments).catch(function(err) {
+app.get("/api", (req, res) => {
+  Comment.find({}).then(comments => {
+    res.json(comments).catch(err => {
       console.log(err);
     });
   });
