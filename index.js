@@ -3,6 +3,10 @@ const app = express();
 const Comment = require("./models/comment");
 
 app.get("/", function(req, res) {
+  res.redirect("/api");
+});
+
+app.get("/api", function(req, res) {
   Comment.find({}).then(function(comments) {
     res.json(comments).catch(function(err) {
       console.log(err);
