@@ -1,0 +1,3 @@
+- Double check you have node
+- install npm `npm init -y`
+- install dependencies - express, mongoose, axios
