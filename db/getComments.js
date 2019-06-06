@@ -24,6 +24,7 @@ let calls = ids.map(id => `${baseURL}${id}`).map(url => axios.get(url));
 Promise.all(calls)
   .then(success => {
     let collectedData = success.map(res => res.data);
+    // console.log(collectedData);
     let stringified = JSON.stringify(collectedData);
     fs.writeFile(__dirname + "/comment10.json", stringified, "utf8", err => {
       if (err) {
